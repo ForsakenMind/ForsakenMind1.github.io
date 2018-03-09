@@ -1,0 +1,398 @@
+body {
+  
+  margin: 0;
+  padding: 0;
+  
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  
+  color: #fff;
+  
+  background: linear-gradient(150deg, #C52184, #A5C4D4);
+  
+  height: 100%;
+  
+  padding-top: 1.618rem;
+  padding-bottom: 1.618rem;
+  
+}
+
+.Ff\(regular\) {
+  font-family: AvenirNextLTPro-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.Ff\(demi\) {
+  font-family: AvenirNextLTPro-Demi, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.Screen {
+  max-width: 414px;
+  margin: 0 auto;
+}
+
+.Tt\(u\) {
+  text-transform: uppercase;
+}
+
+.Ta\(r\) {
+  text-align: right;
+}
+
+.Ta\(c\) {
+  text-align: center;
+}
+
+.D\(ib\) {
+  display: inline-block;
+}
+
+.Fw\(b\) {
+  font-weight: bold;
+}
+
+.Br\(u2\) {
+  border-radius: 1.618rem;
+}
+
+.Br\(default\) {
+  border-radius: 1rem;
+}
+
+.G\(texasRoseToSunglo\) {
+  background: linear-gradient(25deg, #FCB050, #EE7270);
+}
+
+.G\(cranberryToVioletEggplant\) {
+  background: linear-gradient(25deg, #F4638E, #B71B9F);
+}
+
+.G\(blackCurrentToEbony\) {
+  background: linear-gradient(150deg, #3C354A, #15101F);
+}
+
+.Bc\(monsoon\) {
+  border-color: #888590;
+}
+
+.Bw\(1px\) {
+  border-width: 1px;
+}
+
+.Bs\(s\) {
+  border-style: solid;
+}
+
+.Lh\(1\) {
+  line-height: 1;
+}
+
+.Active {
+  border-radius: 50%;
+  width: 0.6180530833432222rem;
+  height: 0.6180530833432222rem;
+  
+  background-color: #3DC75D;
+  
+  animation: pulse 1.5s infinite;
+  
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(.8);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0.48589078879184133rem rgba(61, 199, 93, 0.5);
+  }
+    100% {
+    transform: scale(.8);
+    box-shadow: 0 0 0 0 rgba(#5a99d4, 0);
+  }
+}
+
+.P\(r\) {
+  position: relative;
+}
+
+.P\(a\) {
+  position: absolute;
+}
+
+.T\(0\) {
+  top: 0;
+}
+
+.End\(d5\) {
+  right: 0.30030630018086785rem;
+}
+
+
+/* Arrow */
+.Arrow {
+  position: relative;
+
+  width: 2.058075648rem;
+  height: 2.058075648rem;
+
+  background-color: transparent;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/260969/keyboard-down-arrow-monsoon.svg);
+  background-size: 100% 65%;
+  background-repeat: no-repeat;
+  background-position: 0px;
+  
+  margin-top: -3px;
+  
+  &.Arrow--right {
+    transform: rotate(90deg);
+  }
+
+  &.Arrow--left {
+    transform: rotate(-90deg);
+  }
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel-cell::before {
+  display: block;
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  bottom: 3px;
+  left: 0;
+  z-index: 1;
+  
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.25));
+  
+}
+
+.Pe\(n\) {
+  pointer-events: none;
+}
+
+.Z\(1\) {
+  z-index: 1;
+}
+
+/* Grid */
+
+.Grid {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  
+  &.Grid--center {
+    justify-content: center;
+  }
+  
+  &.Grid--spaceBetween {
+    justify-content: space-between;
+  }
+  
+  &.Grid--inline {
+    display: inline-flex;
+  }
+  
+  &.Grid--reverse {
+    flex-direction: row-reverse;
+  }
+
+  &.Grid--full > .Grid-cell {
+    flex: 0 0 100%;
+  }
+  
+  &.Grid--guttersTwoDown {
+    margin-left: -0.6180530833432222rem;
+  }
+  
+  &.Grid--guttersTwoDown > .Grid-cell {
+    padding-left: 0.6180530833432222rem;
+    margin-bottom: 0.6180530833432222rem;
+  }
+  
+}
+
+.Grid-cell {
+  flex: 1;
+
+  &.Grid-cell--flex {
+    display: flex;
+  }
+
+  &.Grid-cell--autoSize {
+    flex: none;
+  }
+
+  &.Grid-cell--pushRight {
+    margin-left: auto;
+  }
+
+  &.Grid-cell--alignCenter {
+    align-self: center;
+  }
+  
+  &.Grid-cell--alignBottom {
+    align-self: flex-end;
+  }
+  
+  &.Grid-cell--full {
+    flex: 0 0 100%;
+  }
+  
+  &.Grid-cell--2of8 {
+    flex: 0 0 25%;
+  }
+  
+  &.Grid-cell--6of8 {
+    flex: 0 0 75%;
+  }
+  
+  &.Grid-cell--4of6 {
+    width: 66.66%;
+  }
+  
+  &.Grid-cell--2of6 {
+    width: 33.33%;
+  }
+  
+  &.Grid-cell--4of5 {
+    flex: 0 0 80%;
+  }
+  
+  &.Grid-cell--1of5 {
+    flex: 0 0 20%;
+  }
+  
+  &.Grid-cell--4of8 {
+    flex: 0 0 50%;
+  }
+  
+  &.Grid-cell--1of4 {
+    flex: 0 0 25%;
+  }
+  
+  &.Grid-cell--1of3 {
+    flex: 0 0 33.33%;
+  }
+  
+}
+
+.location::before {
+  display: inline-block;
+  content: " ";
+  
+  width: 1rem;
+  height: 1rem;
+  
+  background-color: transparent;
+  
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/260969/compass-monsoon.svg);
+  background-size: 1rem 1rem;
+  
+  margin-right: 0.30030630018086785rem;
+}
+
+.flickity-prev-next-button {
+  opacity: 0.5;
+}
+
+#phone {
+    background: #262131;
+    border-radius: 30px;
+    left: 0;
+    margin: 0 auto 0;
+    margin-top: 1.618rem;
+    padding: 70px 18px 68px 18px;
+    right: 0;
+    width: 414px;
+}
+
+#phone,
+#screen {
+  -ms-overflow-style: none;  // IE 10+
+  overflow: -moz-scrollbars-none;  // Firefox
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#phone::-webkit-scrollbar,
+#screen::-webkit-scrollbar { 
+    display: none; 
+}
+
+#phone:before {
+    background: #363044;
+    border-radius: 20px;
+    content: '';
+    height: 8px;
+    left: 0;
+    margin: -35px auto;
+    position: absolute;
+    right: 0;
+    width: 45px;
+}
+
+#phone:after {
+    background: #363044;
+    border-radius: 20px;
+    content: "";
+    display: block;
+    height: 42px;
+    left: 0;
+    margin: 12px auto;
+    position: absolute;
+    right: 0;
+    width: 42px;
+}
+
+#screen {
+    background: #d6e6e9;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px;
+    height: 834px;
+    padding: 0;
+    position: relative;
+    width: 414px;
+}
+
+@media (max-width: 414px) {
+  
+  body {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .pen-banner {
+    display: none;
+  }
+  
+  #phone,
+  #screen {
+    max-width: 414px;
+    width: 100%;
+  }
+  
+  #phone {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+  }
+  
+  #phone::before,
+  #phone::after {
+    display: none;
+  }
+  
+}

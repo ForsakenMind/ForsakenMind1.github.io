@@ -1,0 +1,412 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+  background: linear-gradient(150deg, #C52184, #A5C4D4);
+  height: 100%;
+  padding-top: 1.618rem;
+  padding-bottom: 1.618rem;
+}
+
+.Ff\(regular\) {
+  font-family: AvenirNextLTPro-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.Ff\(demi\) {
+  font-family: AvenirNextLTPro-Demi, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.Screen {
+  max-width: 414px;
+  margin: 0 auto;
+}
+
+.Tt\(u\) {
+  text-transform: uppercase;
+}
+
+.Ta\(r\) {
+  text-align: right;
+}
+
+.Ta\(c\) {
+  text-align: center;
+}
+
+.D\(ib\) {
+  display: inline-block;
+}
+
+.Fw\(b\) {
+  font-weight: bold;
+}
+
+.Br\(u2\) {
+  border-radius: 1.618rem;
+}
+
+.Br\(default\) {
+  border-radius: 1rem;
+}
+
+.G\(texasRoseToSunglo\) {
+  background: linear-gradient(25deg, #FCB050, #EE7270);
+}
+
+.G\(cranberryToVioletEggplant\) {
+  background: linear-gradient(25deg, #F4638E, #B71B9F);
+}
+
+.G\(blackCurrentToEbony\) {
+  background: linear-gradient(150deg, #3C354A, #15101F);
+}
+
+.Bc\(monsoon\) {
+  border-color: #888590;
+}
+
+.Bw\(1px\) {
+  border-width: 1px;
+}
+
+.Bs\(s\) {
+  border-style: solid;
+}
+
+.Lh\(1\) {
+  line-height: 1;
+}
+
+.Active {
+  border-radius: 50%;
+  width: 0.6180530833432222rem;
+  height: 0.6180530833432222rem;
+  background-color: #3DC75D;
+  -webkit-animation: pulse 1.5s infinite;
+          animation: pulse 1.5s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 0.4858907888rem rgba(61, 199, 93, 0.5);
+            box-shadow: 0 0 0 0.4858907888rem rgba(61, 199, 93, 0.5);
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    -webkit-box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
+            box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 0.4858907888rem rgba(61, 199, 93, 0.5);
+            box-shadow: 0 0 0 0.4858907888rem rgba(61, 199, 93, 0.5);
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    -webkit-box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
+            box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
+  }
+}
+.P\(r\) {
+  position: relative;
+}
+
+.P\(a\) {
+  position: absolute;
+}
+
+.T\(0\) {
+  top: 0;
+}
+
+.End\(d5\) {
+  right: 0.30030630018086785rem;
+}
+
+/* Arrow */
+.Arrow {
+  position: relative;
+  width: 2.058075648rem;
+  height: 2.058075648rem;
+  background-color: transparent;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/260969/keyboard-down-arrow-monsoon.svg);
+  background-size: 100% 65%;
+  background-repeat: no-repeat;
+  background-position: 0px;
+  margin-top: -3px;
+}
+.Arrow.Arrow--right {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.Arrow.Arrow--left {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel-cell::before {
+  display: block;
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  bottom: 3px;
+  left: 0;
+  z-index: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.25)));
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.25));
+}
+
+.Pe\(n\) {
+  pointer-events: none;
+}
+
+.Z\(1\) {
+  z-index: 1;
+}
+
+/* Grid */
+.Grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+}
+.Grid.Grid--center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.Grid.Grid--spaceBetween {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.Grid.Grid--inline {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.Grid.Grid--reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.Grid.Grid--full > .Grid-cell {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+.Grid.Grid--guttersTwoDown {
+  margin-left: -0.6180530833432222rem;
+}
+.Grid.Grid--guttersTwoDown > .Grid-cell {
+  padding-left: 0.6180530833432222rem;
+  margin-bottom: 0.6180530833432222rem;
+}
+
+.Grid-cell {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.Grid-cell.Grid-cell--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.Grid-cell.Grid-cell--autoSize {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+.Grid-cell.Grid-cell--pushRight {
+  margin-left: auto;
+}
+.Grid-cell.Grid-cell--alignCenter {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.Grid-cell.Grid-cell--alignBottom {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.Grid-cell.Grid-cell--full {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+.Grid-cell.Grid-cell--2of8 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+}
+.Grid-cell.Grid-cell--6of8 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 75%;
+          flex: 0 0 75%;
+}
+.Grid-cell.Grid-cell--4of6 {
+  width: 66.66%;
+}
+.Grid-cell.Grid-cell--2of6 {
+  width: 33.33%;
+}
+.Grid-cell.Grid-cell--4of5 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 80%;
+          flex: 0 0 80%;
+}
+.Grid-cell.Grid-cell--1of5 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+}
+.Grid-cell.Grid-cell--4of8 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+.Grid-cell.Grid-cell--1of4 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+}
+.Grid-cell.Grid-cell--1of3 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33%;
+          flex: 0 0 33.33%;
+}
+
+.location::before {
+  display: inline-block;
+  content: " ";
+  width: 1rem;
+  height: 1rem;
+  background-color: transparent;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/260969/compass-monsoon.svg);
+  background-size: 1rem 1rem;
+  margin-right: 0.30030630018086785rem;
+}
+
+.flickity-prev-next-button {
+  opacity: 0.5;
+}
+
+#phone {
+  background: #262131;
+  border-radius: 30px;
+  left: 0;
+  margin: 0 auto 0;
+  margin-top: 1.618rem;
+  padding: 70px 18px 68px 18px;
+  right: 0;
+  width: 414px;
+}
+
+#phone,
+#screen {
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#phone::-webkit-scrollbar,
+#screen::-webkit-scrollbar {
+  display: none;
+}
+
+#phone:before {
+  background: #363044;
+  border-radius: 20px;
+  content: '';
+  height: 8px;
+  left: 0;
+  margin: -35px auto;
+  position: absolute;
+  right: 0;
+  width: 45px;
+}
+
+#phone:after {
+  background: #363044;
+  border-radius: 20px;
+  content: "";
+  display: block;
+  height: 42px;
+  left: 0;
+  margin: 12px auto;
+  position: absolute;
+  right: 0;
+  width: 42px;
+}
+
+#screen {
+  background: #d6e6e9;
+  -webkit-perspective: 800px;
+  -o-perspective: 800px;
+  perspective: 800px;
+  height: 834px;
+  padding: 0;
+  position: relative;
+  width: 414px;
+}
+
+@media (max-width: 414px) {
+  body {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .pen-banner {
+    display: none;
+  }
+
+  #phone,
+  #screen {
+    max-width: 414px;
+    width: 100%;
+  }
+
+  #phone {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  #phone::before,
+  #phone::after {
+    display: none;
+  }
+}
